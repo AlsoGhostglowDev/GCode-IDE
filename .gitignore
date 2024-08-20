@@ -1,0 +1,7 @@
+.vscode/*
+.haxelib/*
+.github/
+export/*
+
+.history
+.ionide
