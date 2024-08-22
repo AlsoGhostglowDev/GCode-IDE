@@ -1,5 +1,6 @@
 package;
 
+import flixel.system.scaleModes.FixedScaleAdjustSizeScaleMode;
 import flixel.FlxGame;
 import openfl.display.Sprite;
 
@@ -11,6 +12,7 @@ class Main extends Sprite
 		addChild(new FlxGame(0, 0, states.CodeState));
 
 		lime.app.Application.current.window.borderless = true;
-		lime.app.Application.current.window.width += 32;
+		FlxG.autoPause = false;
+		FlxG.scaleMode = new FixedScaleAdjustSizeScaleMode();
 	}
 }
